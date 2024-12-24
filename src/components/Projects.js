@@ -4,6 +4,11 @@ import TrackVisibility from "react-on-screen";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
+import iopImg from "../assets/img/iop-publishing.png";
+import sdscImg from "../assets/img/sdsc-3dgeoinfo.png";
+import jumboImg from "../assets/img/jumbo.png";
+import cimeuhmal from "../assets/img/cimeuhmal.png";
+import jakarta from '../assets/img/jakarta.png';
 
 export const Projects = () => {
 
@@ -105,32 +110,32 @@ export const Projects = () => {
             {
                 title: "IOP Conference Series (Scopus Proceeding)",
                 description: "As-built Drawing Generation of LFM Building ITB using Terrestrial Laser Scanner",
-                imgUrl: projImg1,
+                imgUrl: iopImg,
               },
               {
                 title: "IOP Conference Series (Scopus Proceeding)",
                 description: "Discovering Hidden Pattern in COVID-19 Prevention through Exit-Entry Permit Letter (SIKM) System using Geospatial Analysis",
-                imgUrl: projImg1,
+                imgUrl: iopImg,
               },
               {
                 title: "Social Activity in Tanah Merah, North Jakarta",
                 description: "Building Map of Tanah Merah Village",
-                imgUrl: projImg1,
+                imgUrl: jakarta,
               },
               {
                 title: "Social Activities in Dago Datar Village, Subang",
                 description: "Medical Check Up and Assets Mapping",
-                imgUrl: projImg1,
+                imgUrl: cimeuhmal,
               },
               {
                 title: "Supporting the Growth of Franchise Business",
                 description: "Digital Techonology for Es Teh Manis Jumbo",
-                imgUrl: projImg1,
+                imgUrl: jumboImg,
               },
               {
                 title: "Smart Data Smart Cities & 3D Geoinfo",
                 description: "Participant in 7th Smart Data Smart Cities & 3D Geoinfo in Sydney, Australia.",
-                imgUrl: projImg1,
+                imgUrl: sdscImg,
               },
         ];
 
@@ -142,7 +147,7 @@ export const Projects = () => {
                     <TrackVisibility>
                         {({isVisible}) =>
                             <div className={isVisible ? "animate__animated animate__bounce" : ""}>
-                        <h2>Projects</h2>
+                        <h2>PROJECTS</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>}
                     </TrackVisibility>

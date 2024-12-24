@@ -3,9 +3,13 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
+import meter1 from "../assets/img/meter1.svg";
+import meter2 from "../assets/img/meter2.svg";
+import meter3 from "../assets/img/meter3.svg";
+import colorSharp from "../assets/img/color-sharp.png";
 import qgisImg from "../assets/img/skills/qgis.png";
 import postgisImg from "../assets/img/skills/postgis.png";
-import mapboxImg from "../assets/img/skills/mapbox-2.svg";
+import mapboxImg from "../assets/img/skills/mapbox.png";
 import cesiumImg from "../assets/img/skills/cesium.png";
 import arcgisproImg from "../assets/img/skills/arcgis-pro.png";
 import arcgisolImg from "../assets/img/skills/arcgis-online.png";
@@ -17,9 +21,8 @@ import survey123Img from "../assets/img/skills/arcgis-survey123.png";
 import mysqlImg from "../assets/img/skills/mysql.svg";
 import postgreImg from "../assets/img/skills/postgresql.svg";
 import pythonImg from "../assets/img/skills/python.svg";
-import tableauImg from "../assets/img/skills/tableau-software.svg";
+import tableauImg from "../assets/img/skills/tableau.svg";
 import excelImg from "../assets/img/skills/excel.png";
-import spssImg from "../assets/img/skills/spss.png";
 import htmlImg from "../assets/img/skills/html.png";
 import cssImg from "../assets/img/skills/css.png";
 import jsImg from "../assets/img/skills/javascript.png";
@@ -87,11 +90,11 @@ export const Skills = () => {
                     imgUrl: arcgisdashboardImg,
                 },
                 {
-                    title: "Field Maps",
+                    title: "ArcGIS Field Maps",
                     imgUrl: fieldmapsImg,
                 },
                 {
-                    title: "Quick Capture",
+                    title: "ArcGIS Quick Capture",
                     imgUrl: quickcaptureImg,
                 },
                 {
@@ -123,10 +126,6 @@ export const Skills = () => {
                     title: "Microsoft Excel",
                     imgUrl: excelImg,
                 },
-                {
-                    title: "SPSS",
-                    imgUrl: spssImg,
-                },
             ],
         },
         {
@@ -139,6 +138,10 @@ export const Skills = () => {
                 {
                     title: "CSS",
                     imgUrl: cssImg,
+                },
+                {
+                    title: "Javascript",
+                    imgUrl: jsImg,
                 },
                 {
                     title: "ReactJS",
@@ -166,30 +169,40 @@ export const Skills = () => {
 
     return (
         <section className="skill" id="skills">
-            <div className="container">
-                <TrackVisibility>
-                    {({isVisible}) =>
-                    <div className={isVisible ? "animate__animated animate__bounce" : ""}>
-                    <h2>SKILLS</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>}
-                </TrackVisibility>
-                <div className="skills-columns">
-                    {skills.map((category) => (
-                        <div key={category.category} className="skills-column">
-                            <h3 className="skills-category-title">{category.category}</h3>
-                            <div className="skills-tools">
-                                {category.tools.map((tool) => (
-                                    <div key={tool.title} className="tool-card">
-                                        <img src={tool.imgUrl} alt={tool.title} className="tool-image" />
-                                        <h4 className="tool-title">{tool.title}</h4>
-                                    </div>
-                                ))}
-                            </div>
+            <Container>
+                <Row>
+                    <Col>
+                    <TrackVisibility>
+                        {({isVisible}) =>
+                        <div className={isVisible ? "animate__animated animate__bounce" : ""}>
+                        <h2>Skills</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>}
+                    </TrackVisibility>
+                        <div className="skill-bx">    
+                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>Web Development</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter2} alt="Image" />
+                                    <h5>Brand Identity</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter3} alt="Image" />
+                                    <h5>Logo Design</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>Web Development</h5>
+                                </div>
+                            </Carousel>
                         </div>
-                    ))}
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
+            <img className="background-image-left" src={colorSharp} />
         </section>
     )
 }

@@ -342,17 +342,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
-.skill {
+/* .skill {
   padding: 50px 0;
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #313131;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
 }
+
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -381,7 +382,114 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+} */
+
+.skill {
+  padding: 80px 0;
+  position: relative;
+  background-image: url('./assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+
+.skill p {
+  color: #3a3a3a;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.skills-columns {
+  display: flex;
+  gap: 1rem; /* Small gap between columns */
+  justify-content: space-between;
+  flex-wrap: wrap; /* Responsiveness for smaller screens */
+  align-items: stretch;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 400px; /* Minimum width for smaller screens */
+  max-width: 500px; /* Limit maximum column width */
+  margin: 0.5rem;
+  background-color: rgba(200, 201, 193, 0.7); /* Background for columns */
+  border: 1px solid rgba(200, 201, 193, 1); /* Border around each column */
+  border-radius: 8px; /* Smooth corners */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Add spacing inside the column */
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.skills-category-title {
+  font-size: 1.3rem; /* Smaller title size for uniformity */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.skills-tools {
+  display: flex;
+  flex-wrap: wrap; /* Wrap icons inside columns */
+  justify-content: center; /* Center align tools */
+  gap: 0.7rem; /* Space between tool cards */
+}
+
+.tool-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  width: 70px; /* Equal width for tool cards */
+  height: 90px; /* Fixed height for uniformity */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool-card:hover {
+  transform: scale(1.1);
+}
+
+.tool-image {
+  max-width: 40px; /* Equal size for icons */
+  height: 40px; /* Uniform height for all icons */
+  margin-bottom: 0.3rem;
+}
+
+.tool-title {
+  font-size: 0.75rem; /* Equal size for titles */
+  font-weight: 500;
+  color: #3a3a3a;
+}
+
 
 /************ Projects Css ************/
 .project {
@@ -531,4 +639,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   letter-spacing: 0.5px;
   margin-top: 10px;
+}
+
+/************ Media Queries for Responsiveness ************/
+
+
+/* Larger monitors and desktops */
+@media (min-width: 1024px) {
+  .skills-columns {
+      justify-content: space-between;
+  }
+  .skills-column {
+      flex: 1 1 calc(32% - 1rem); /* Three columns fit side-by-side */
+      max-width: 32%;
+  }
+}
+
+/* Tablets and small laptops */
+@media (max-width: 1023px) {
+  .skills-columns {
+      justify-content: space-evenly;
+  }
+  .skills-column {
+      flex: 1 1 calc(45% - 1rem); /* Two columns side-by-side */
+      max-width: 45%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 767px) {
+  .skills-columns {
+      flex-direction: column; /* Stack columns vertically */
+      align-items: center;
+  }
+  .skills-column {
+      flex: 1 1 100%; /* Full width for mobile */
+      max-width: 100%;
+  }
 }
