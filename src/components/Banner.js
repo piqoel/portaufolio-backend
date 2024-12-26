@@ -52,7 +52,7 @@ export const Banner = () => {
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                             <span className="tagline">Welcome to my Portaufolio</span>
                             <h1>{`Hi I'm `}<span className="wrap">{text}</span></h1>
-                            <p>A result-oriented GIS and Data Analyst professional with over four years of experience in government area. Proven track record of leading and managing strategic projects from Head Department of DPMPTSP DKI Jakarta, delivering data with spatial value and innovation in permits and the investment sector. Expertise in end-to-end project planning and coordinating multi-sector to get efficient and effective results. Seek opportunities to leverage datasets to uncover hidden patterns and solve complex problems with technology.</p>
+                            <p>A result-oriented GIS and Data Analyst professional with over five years of experience in the government area. Proven track record of leading and managing strategic projects from Head Department of DPMPTSP DKI Jakarta, delivering data with spatial value and innovation in multi-sector. Expertise in end-to-end project planning and coordinating to get efficient and effective results. Seek opportunities to leverage datasets to uncover hidden patterns and solve complex problems with technology.</p>
                             <button onClick={() => console.log('connect')}>Let's connect</button>
                         </div>}
                     </TrackVisibility>

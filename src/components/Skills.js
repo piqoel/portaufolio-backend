@@ -28,6 +28,13 @@ import vscodeImg from "../assets/img/skills/vscode.png";
 import githubImg from "../assets/img/skills/github.png";
 import figmaImg from "../assets/img/skills/figma.png";
 import trelloImg from "../assets/img/skills/trello.png";
+import lumionImg from "../assets/img/skills/lumion.png";
+import maptekImg from "../assets/img/skills/maptek.svg";
+import magnetcollageImg from "../assets/img/skills/magnet-collage.png";
+import revitImg from "../assets/img/skills/revit.png";
+import cycloneImg from "../assets/img/skills/cyclone.png";
+import canvaImg from "../assets/img/skills/canva.png";
+
 
 export const Skills = () => {
     const responsive = {
@@ -52,7 +59,7 @@ export const Skills = () => {
 
     const skills = [
         {
-            category: "GIS Analytics",
+            category: "GIS Specialist",
             tools: [
                 {
                     title: "QGIS",
@@ -160,6 +167,30 @@ export const Skills = () => {
                     title: "Trello",
                     imgUrl: trelloImg,
                 },
+                {
+                    title: "Canva",
+                    imgUrl: canvaImg,
+                },
+                // {
+                //     title: "Lumion",
+                //     imgUrl: lumionImg,
+                // },
+                // {
+                //     title: "I-Site Studio",
+                //     imgUrl: maptekImg,
+                // },
+                // {
+                //     title: "Magnet Collage",
+                //     imgUrl: magnetcollageImg,
+                // },
+                // {
+                //     title: "Revit",
+                //     imgUrl: revitImg,
+                // },
+                // {
+                //     title: "Cyclone",
+                //     imgUrl: cycloneImg,
+                // },
             ],
         },
     ];
@@ -171,7 +202,7 @@ export const Skills = () => {
                     {({isVisible}) =>
                     <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                     <h2>SKILLS</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Proficient in conducting advanced spatial analysis, managing geospatial data, and creating interactive dashboards. Skilled in leveraging data analytics for visualization, predictive modeling, and process optimization. Experienced in building intuitive web applications, integrating development tools, and enhancing user experiences. Adept at simplifying workflows and improving project outcomes through effective collaboration and design strategies.</p>
                     </div>}
                 </TrackVisibility>
                 <div className="skills-columns">

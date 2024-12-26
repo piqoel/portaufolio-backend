@@ -8,101 +8,102 @@ import iopImg from "../assets/img/iop-publishing.png";
 import sdscImg from "../assets/img/sdsc-3dgeoinfo.png";
 import jumboImg from "../assets/img/jumbo.png";
 import cimeuhmal from "../assets/img/cimeuhmal.png";
-import jakarta from '../assets/img/jakarta.png';
+import jakartaImg from "../assets/img/jakarta.png";
+import dpmptspImg from "../assets/img/dpmptsp.png";
 
 export const Projects = () => {
 
     const project_gisspecialist = [
         {
-            title: "A",
-            description: "Potential Value of Corporate Asset Liabilities to the Government in Jakarta",
-            imgUrl: projImg1,
+            title: "Potential Value of Corporate Asset Liabilities to the Government in Jakarta",
+            description: "Developed a geospatial data platform featuring interactive maps and a dashboard to analyze investment potential and assess the value of Jakarta government assets, utilizing the distribution data of integrated business land areas and corporate asset liabilities.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "B",
-            description: "Storing and Utility Excavation Survey",
-            imgUrl: projImg1,
+            title: "Storing and Utility Excavation Survey",
+            description: "Developed a mobile survey application to collect data on utility storage and excavation locations and status, along with a dashboard and interactive map to effectively display real-time survey and permit data.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "C",
-            description: "Government Asset Survey",
-            imgUrl: projImg1,
+            title: "Government Asset Survey",
+            description: "Developed a survey application for government assets accessible on mobile and desktop platforms, and analyzed the results to estimate potential investment value by evaluating land and building valuations.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "D",
-            description: "Permit Consultation for Housing",
-            imgUrl: projImg1,
+            title: "Permit Consultation for Housing",
+            description: "Developed an effective GIS environment using the ESRI platform (Survey123, ArcGIS Online, and ArcGIS Dashboard) for the Permit Consultation for Housing program, facilitating the validation of completeness and compliance of requirements for residential building permits.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "E",
-            description: "City Plan Information Program",
-            imgUrl: projImg1,
+            title: "City Plan Information Program",
+            description: "Developed an effective GIS environment for the City Plan Information program, integrating real-time data from Jakartasatu and the Jakarta National Land Agency.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "F",
-            description: "3D Building Permit",
-            imgUrl: projImg1,
+            title: "3D Building Permit",
+            description: "Developed an innovation system for implementing 3D existing building models (LOD 3) in the building permit process.",
+            imgUrl: dpmptspImg,
           },
     ];
 
     const project_systemanalyst = [
         {
-            title: "A",
-            description: "Business and Building Permits Compliance Monitoring",
-            imgUrl: projImg1,
+            title: "Business and Building Permits Compliance Monitoring",
+            description: "Developed a geospatial data platform (maps and dashboard) for business permit compliance monitoring by integrating business land area, corporate asset liabilities, building, and business point data.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "B",
-            description: "Building Permit for Micro and Small Business",
-            imgUrl: projImg1,
+            title: "Building Permit for Micro and Small Business",
+            description: "Simplified the building permit process for micro and small businesses by integrating GIS technology and automation, reducing processing time to as fast as one day. Analyzed data on business owners, property ownership, and building sizes to prioritize permit assistance and improve service efficiency.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "C",
-            description: "Building Permit Program",
-            imgUrl: projImg1,
+            title: "Building Permit Program",
+            description: "Redesigned the building permit process by simplifying the process and requirements, integrating data, and implementing 2D and 3D GIS methods, reducing permit processing time from 42 to 14 workdays and enhancing monitoring efficiency",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "D",
-            description: "Ease of Doing Business : Building Function Permit",
-            imgUrl: projImg1,
+            title: "Ease of Doing Business : Building Function Permit",
+            description: "Redesigned the building function permit process by implementing a self-assessment method and focusing on post-permit monitoring and utilizing a 3D model for more effective oversight.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "E",
-            description: "Ease of Doing Business : Convenience Store Permit",
-            imgUrl: projImg1,
+            title: "Ease of Doing Business : Convenience Store Permit",
+            description: "Developed an innovative business permit system by integrating convenience store and building functional permits, simplifying processes to enhance collaboration with micro and small businesses and implemented a spatial analysis system to ensure regulatory compliance for distance requirements between convenience stores.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "F",
-            description: "Micro and Small Business Permit",
-            imgUrl: projImg1,
+            title: "Micro and Small Business Permit",
+            description: "Led the development and implementation innovation of a micro and small business permit program, redesigning processes to enable one-day completion with a 'reversible process' method to support economic recovery during the COVID-19 pandemic.",
+            imgUrl: dpmptspImg,
           },
     ];
 
     const project_dataanalyst = [
         {
-            title: "A",
-            description: "Impact of SIKM on COVID-19 Cases and Jakarta Economic Growth",
-            imgUrl: projImg1,
+            title: "Impact of SIKM on COVID-19 Cases and Jakarta Economic Growth",
+            description: "Evaluated the impact of the SIKM system on the COVID-19 Pandemic by analyzing SIKM permit data, COVID-19 cases and economic growth.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "B",
-            description: "Investment Potential in DKI Jakarta",
-            imgUrl: projImg1,
+            title: "Investment Potential in DKI Jakarta",
+            description: "Explore investment possibilities through maps using land use data, land cover, land value, building use and elevation, bathymetric maps, livability index, and environment carrying capacity index.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "C",
-            description: "Potential Location Analysis of ToD Area",
-            imgUrl: projImg1,
+            title: "Potential Location Analysis of ToD Area",
+            description: "Identified strategic locations for Transit-Oriented Development (TOD) near MRT stations, leveraging insights from land use, integrated business land area, environmental carrying capacity and livability index.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "D",
-            description: "Bike-Sharing Station Analysis",
-            imgUrl: projImg1,
+            title: "Bike-Sharing Station Analysis",
+            description: "Identified optimal locations for bike-sharing stations through an investment map, leveraging insights from land use data, tourist attractions, and public transportation usage.",
+            imgUrl: dpmptspImg,
           },
           {
-            title: "E",
-            description: "Building Permit Fluctuation Dashboard",
-            imgUrl: projImg1,
+            title: "Building Permit Fluctuation Dashboard",
+            description: "Developed a dashboard visualizing building permit trends from 2018 to 2022, providing insights into the progress of innovation programs to support policymakers.",
+            imgUrl: dpmptspImg,
           },
     ];
 
@@ -120,7 +121,7 @@ export const Projects = () => {
               {
                 title: "Social Activity in Tanah Merah, North Jakarta",
                 description: "Building Map of Tanah Merah Village",
-                imgUrl: jakarta,
+                imgUrl: jakartaImg,
               },
               {
                 title: "Social Activities in Dago Datar Village, Subang",
@@ -148,7 +149,7 @@ export const Projects = () => {
                         {({isVisible}) =>
                             <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                         <h2>PROJECTS</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Each project in my portfolio is a testament to my dedication to innovation, technical excellence, and problem-solving. Here’s a closer look at the challenges I tackled and the solutions I delivered.</p>
                         </div>}
                     </TrackVisibility>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
