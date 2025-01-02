@@ -430,8 +430,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skills-column {
   flex: 1;
-  min-width: 400px; /* Minimum width for smaller screens */
-  max-width: 500px; /* Limit maximum column width */
+  min-width: 200px; /* Minimum width for smaller screens */
+  max-width: 100%; /* Limit maximum column width */
   margin: 0.5rem;
   background-color: rgba(200, 201, 193, 0.7); /* Background for columns */
   border: 1px solid rgba(200, 201, 193, 1); /* Border around each column */
