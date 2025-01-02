@@ -184,7 +184,7 @@ export const Projects = () => {
                                 <Nav.Link eventKey="third">DATA ANALYST</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="fourth">OTHERS</Nav.Link>
+                                <Nav.Link eventKey="fourth">OTHER PROJECTS</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>

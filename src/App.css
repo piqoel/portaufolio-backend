@@ -526,8 +526,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
+  flex: 1;
   border-radius: 0;
-  padding: 17px 0;
+  padding: 10px;
   color: #fff;
   width: 100%;
   font-size: 17px;
@@ -792,6 +793,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Media Queries for Responsiveness ************/
+
+@media (max-width: 768px) {
+  .nav-pills .nav-link {
+      margin: 5px 0; /* Adjusts spacing for smaller screens */
+      padding: 8px; /* Reduces padding for better fit */
+  }
+}
+
 /* Larger monitors and desktops */
 @media (min-width: 1024px) {
   .skills-columns {
