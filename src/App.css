@@ -127,7 +127,7 @@ nav.navbar {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
@@ -627,16 +627,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
-}
-.contact img {
-  width: 92%;
+  background: #121212;
+  padding: 10px 0 10px 0;
 }
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
 }
 .contact form input, .contact form textarea {
   width: 100%;
@@ -665,15 +666,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0.8;
 }
 .contact form button {
+  margin-left: auto; /* Push the button to the right */
   font-weight: 700;
   color: #000;
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 10px; /* Adds spacing from the form fields */
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
+}
+.contact form .button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;
 }
 .contact form button span {
   z-index: 1;
@@ -713,9 +720,78 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 10px;
 }
 
+/************ Contact Modal Css ************/
+/* Ensure modal dialog is much wider */
+.contact-modal .modal-dialog {
+  max-width: 90%; /* Set the desired modal width */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure the modal content remains properly aligned */
+.contact-modal .modal-content {
+  background-color: #121212;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0;
+  border: none;
+  max-height: 90vh;
+  overflow: hidden;
+  width: 70%;
+}
+
+.contact-modal .modal-header {
+  background-color: #121212;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+}
+
+.contact-modal .modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Adjust the modal body to fit content */
+.contact-modal .modal-body {
+  background-color: #121212;
+  color: #fff;
+  padding: 20px;
+  overflow: visible;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-modal .modal {
+  z-index: 1050 !important; /* Modal itself */
+}
+
+/* Modal backdrop for proper positioning */
+.contact-modal .modal-backdrop {
+  z-index: 1040;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-modal .close {
+  color: #fff;
+  font-size: 1.2rem;
+  opacity: 1;
+}
+
+/* Ensure the form inside the modal fits properly */
+.contact-modal .contact form {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
 /************ Media Queries for Responsiveness ************/
-
-
 /* Larger monitors and desktops */
 @media (min-width: 1024px) {
   .skills-columns {
@@ -747,5 +823,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .skills-column {
       flex: 1 1 100%; /* Full width for mobile */
       max-width: 100%;
+  }
+}
+
+/* Optional: Add extra styles for responsiveness */
+@media (min-width: 1024px) {
+  .contact-modal .modal-dialog {
+    max-width: 80%; /* Limit width slightly on larger screens */
   }
 }
