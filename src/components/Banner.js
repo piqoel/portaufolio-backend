@@ -63,7 +63,7 @@ export const Banner = () => {
                                     }
                                 >
                                     <span className="tagline">
-                                        Welcome to my Portfolio
+                                        Taufiiqulhakim Rifqi Hawaari
                                     </span>
                                     <h1>
                                         {`Hi I'm `}
