@@ -1,25 +1,15 @@
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-      const { firstName, lastName, email, phone, message } = req.body;
-  
-      // Simulate processing (e.g., log data or send an email)
-      console.log('Received contact form data:', {
-        firstName,
-        lastName,
-        email,
-        phone,
-        message,
-      });
-  
-      return res.status(200).json({
-        code: 200,
-        message: 'Message sent successfully!',
-      });
+        const { firstName, lastName, email, phone, message } = req.body;
+
+        try {
+            console.log('Form submitted:', { firstName, lastName, email, phone, message });
+            res.status(200).json({ message: 'Message sent successfully!' });
+        } catch (error) {
+            console.error('Error:', error);
+            res.status(500).json({ message: 'Failed to send message. Please try again later.' });
+        }
     } else {
-      return res.status(405).json({
-        code: 405,
-        message: 'Method Not Allowed',
-      });
+        res.status(405).json({ message: 'Method Not Allowed' });
     }
-  }
-  
+}
